@@ -1,0 +1,89 @@
+{
+  "scenario_id": "lausanne_housing_2028",
+  "meta": {
+    "title": "Crise du logement à Lausanne",
+    "duration_minutes": 15,
+    "version": "1.0",
+    "author": "OCP Project"
+  },
+  "initial_state": {
+    "budget": 100,
+    "public_support": 70,
+    "carbon_index": 60,
+    "rent_index": 100,
+    "segregation_index": 40
+  },
+  "phases": [
+    {
+      "id": "reading_phase",
+      "type": "reading",
+      "documents": [
+        {"id": "urban_report", "title": "Rapport urbanisme", "pages": 12},
+        {"id": "economic_note", "title": "Note économique", "pages": 8},
+        {"id": "sociology_study", "title": "Étude sociologique", "pages": 6},
+        {"id": "climate_report", "title": "Rapport climat", "pages": 5}
+      ]
+    },
+    {
+      "id": "ai_consultation",
+      "type": "llm_interaction",
+      "allowed": true
+    },
+    {
+      "id": "policy_decisions",
+      "type": "decision",
+      "decisions": [
+        {
+          "id": "densification",
+          "question": "Politique de densification urbaine ?",
+          "choices": [
+            {"id": "high", "effects": {"rent_index": -10, "public_support": -5, "carbon_index": -10}},
+            {"id": "medium", "effects": {"rent_index": -5, "public_support": 0, "carbon_index": -5}},
+            {"id": "moratorium", "effects": {"rent_index": +10, "public_support": +5, "carbon_index": +10}}
+          ]
+        },
+        {
+          "id": "rent_control",
+          "question": "Régulation des loyers ?",
+          "choices": [
+            {"id": "strict", "effects": {"rent_index": -15, "budget": -10}},
+            {"id": "incentive", "effects": {"rent_index": -5, "budget": -3}},
+            {"id": "laissez_faire", "effects": {"rent_index": +10, "budget": +5}}
+          ]
+        },
+        {
+          "id": "land_policy",
+          "question": "Politique foncière ?",
+          "choices": [
+            {"id": "public_preemption", "effects": {"segregation_index": -10, "budget": -15}},
+            {"id": "ppp", "effects": {"segregation_index": -5, "budget": -5}},
+            {"id": "free_market", "effects": {"segregation_index": +10, "budget": +5}}
+          ]
+        },
+        {
+          "id": "social_housing",
+          "question": "Programme de logement social ?",
+          "choices": [
+            {"id": "massive", "effects": {"segregation_index": -15, "budget": -20}},
+            {"id": "targeted", "effects": {"segregation_index": -5, "budget": -8}},
+            {"id": "none", "effects": {"segregation_index": +5, "budget": +5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speech_phase",
+      "type": "free_text",
+      "prompt": "Rédigez un discours public justifiant vos choix politiques."
+    }
+  ],
+  "scoring": {
+    "weights": {
+      "attention": 0.2,
+      "reasoning": 0.25,
+      "planning": 0.25,
+      "metacognition": 0.15,
+      "ai_usage": 0.15
+    }
+  }
+}

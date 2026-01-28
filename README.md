@@ -190,12 +190,6 @@ Sous-questions :
 
 Il s’agit d’un **instrument de pilotage sociétal**, comparable aux baromètres économiques ou climatiques.
 
----
-
-*Document conçu pour être exploitable par une IA pour approfondissement, simulation de scénarios, design de protocoles expérimentaux et rédaction de projets institutionnels.*
-```
-
----
 
 ## 12. Concept Produit / Service Innovant – **Cognitive Observatory as a Service (COaaS)**
 
@@ -332,3 +326,8 @@ Il s’agit d’un **instrument de pilotage sociétal**, comparable aux baromèt
 
 ---
 
+---
+
+*Ce document a été conçu pour être exploitable par une IA pour approfondissement, simulation de scénarios, design de protocoles expérimentaux et rédaction de projets institutionnels.*
+
+---

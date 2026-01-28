@@ -182,7 +182,7 @@ parameters:
 # 12. Valeur Scientifique & Politique
 
 * Instrument unique pour mesurer cognition politique réelle
-* Comparaison générationnelle longitudinal
+* Comparaison générationnelle longitudinale
 * Outil d’aide à la décision publique
 
 ---

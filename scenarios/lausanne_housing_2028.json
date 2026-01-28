@@ -1,0 +1,21 @@
+{
+  "scenario_id": "lausanne_housing_2028",
+  "meta": {"title": "Crise du logement à Lausanne", "version": "1.0"},
+  "initial_state": {
+    "budget": 100,
+    "public_support": 70,
+    "carbon_index": 60,
+    "rent_index": 100,
+    "segregation_index": 40
+  },
+  "phases": [],
+  "scoring": {
+    "weights": {
+      "attention": 0.2,
+      "reasoning": 0.25,
+      "planning": 0.25,
+      "metacognition": 0.15,
+      "ai_usage": 0.15
+    }
+  }
+}

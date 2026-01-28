@@ -39,7 +39,7 @@
           "choices": [
             {"id": "high", "effects": {"rent_index": -10, "public_support": -5, "carbon_index": -10}},
             {"id": "medium", "effects": {"rent_index": -5, "public_support": 0, "carbon_index": -5}},
-            {"id": "moratorium", "effects": {"rent_index": +10, "public_support": +5, "carbon_index": +10}}
+            {"id": "moratorium", "effects": {"rent_index": 10, "public_support": 5, "carbon_index": 10}}
           ]
         },
         {
@@ -48,7 +48,7 @@
           "choices": [
             {"id": "strict", "effects": {"rent_index": -15, "budget": -10}},
             {"id": "incentive", "effects": {"rent_index": -5, "budget": -3}},
-            {"id": "laissez_faire", "effects": {"rent_index": +10, "budget": +5}}
+            {"id": "laissez_faire", "effects": {"rent_index": 10, "budget": 5}}
           ]
         },
         {
@@ -57,7 +57,7 @@
           "choices": [
             {"id": "public_preemption", "effects": {"segregation_index": -10, "budget": -15}},
             {"id": "ppp", "effects": {"segregation_index": -5, "budget": -5}},
-            {"id": "free_market", "effects": {"segregation_index": +10, "budget": +5}}
+            {"id": "free_market", "effects": {"segregation_index": 10, "budget": 5}}
           ]
         },
         {
@@ -66,7 +66,7 @@
           "choices": [
             {"id": "massive", "effects": {"segregation_index": -15, "budget": -20}},
             {"id": "targeted", "effects": {"segregation_index": -5, "budget": -8}},
-            {"id": "none", "effects": {"segregation_index": +5, "budget": +5}}
+            {"id": "none", "effects": {"segregation_index": 5, "budget": 5}}
           ]
         }
       ]

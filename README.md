@@ -1,4 +1,4 @@
-# go-OCC Observatoire Cognitif Populationnel Basé sur les Interactions Humain–IA  
+# go-OCP Observatoire Cognitif Populationnel Basé sur les Interactions Humain–IA  
 ### Note de cadrage (version travail)
 
 ---
